@@ -2,7 +2,9 @@ package com.example.student.blogreader;
 
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class BlogPostParser {
     private static BlogPostParser parser;
@@ -19,6 +21,10 @@ public class BlogPostParser {
     }
 
     public JSONObject parse(InputStream inputStream) {
-        return null;
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+        StringBuilder builder = new StringBuilder();
+        JSONObject jsonObject = null;
+
+        return jsonObject;
     }
 }
