@@ -22,6 +22,7 @@ public class BlogPostTask extends AsyncTask<Activity, Void, JSONObject> {
             int responseCode = connection.getResponseCode();
 
             if(responseCode == HttpURLConnection.HTTP_OK){
+                BlogPostParser.get().parse(connection.getInputStream());
                 Log.i("BlogPostTask", "Successful Connection " + responseCode);
             }
         }
