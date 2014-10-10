@@ -13,8 +13,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class BlogPostTask extends AsyncTask<Activity, Void, JSONObject> {
+    private Activity activity;
     @Override
-    protected JSONObject doInBackground(Activity... params) {
+    protected JSONObject doInBackground(Activity... activities) {
+        activity = activities[0];
         JSONObject jsonObject = null;
 
         try {
