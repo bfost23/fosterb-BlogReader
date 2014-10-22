@@ -24,7 +24,7 @@ public class BlogPostAdapter extends ArrayAdapter<BlogPost> {
 
         TextView textView = (TextView)convertView.findViewById(android.R.id.text1);
         textView.setText(post.title);
-
+        //display the text on the list of the blogs 
         return convertView;
     }
 }

@@ -16,5 +16,5 @@
         android:layout_centerInParent="true"
 
         />
-
+        //Giving the progress bar properties
 </RelativeLayout>

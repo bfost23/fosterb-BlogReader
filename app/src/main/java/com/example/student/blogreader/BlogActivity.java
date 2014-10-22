@@ -25,6 +25,7 @@ public class BlogActivity extends Activity {
         progressBar = (ProgressBar)findViewById(R.id.progressbar);
         //progressBar.getLayoutParams().height = 500;
         //progressBar.invalidate();
+        // displaying progress bar
         listView = (ListView)findViewById(R.id.listView);
 
         listView.setEmptyView(progressBar);
@@ -39,6 +40,7 @@ public class BlogActivity extends Activity {
                 intent.setData(blogUri);
 
                 startActivity(intent);
+                //When blogs are clicked links to the page
             }
         });
 

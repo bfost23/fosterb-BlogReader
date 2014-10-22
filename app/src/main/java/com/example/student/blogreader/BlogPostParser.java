@@ -65,6 +65,7 @@ public class BlogPostParser {
                 BlogPost blogPost = new BlogPost(title, url);
                 posts.add(blogPost);
             }
+            //displaying the list of
         }
         catch(JSONException error){
             Log.e("BlogPostParser", "JSONException: " + error);

@@ -40,6 +40,7 @@ public class BlogPostTask extends AsyncTask<Activity, Void, JSONObject> {
         }
         return jsonObject;
     }
+    //connected to the internet
 
     @Override
     protected void onPostExecute(JSONObject jsonObject) {
