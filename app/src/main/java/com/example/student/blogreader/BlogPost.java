@@ -12,6 +12,7 @@ public class BlogPost {
         this.date = date;
         this.author = author;
         //setting the title and url variables
+
     }
 
 

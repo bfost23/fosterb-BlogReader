@@ -28,6 +28,7 @@ public class BlogPostAdapter extends ArrayAdapter<BlogPost> {
         textView2.setText(post.date);
         TextView textView3 = (TextView)convertView.findViewById(R.id.author);
         textView3.setText(post.author);
+
         //display the text on the list of the blogs
         return convertView;
     }
