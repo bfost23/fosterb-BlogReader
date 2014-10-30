@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.ListView;
 
 import org.json.JSONObject;
@@ -45,9 +46,9 @@ public class BlogPostTask extends AsyncTask<Activity, Void, JSONObject> {
     @Override
     protected void onPostExecute(JSONObject jsonObject) {
         BlogPostParser.get().readFeed(jsonObject);
-        ListView listView = (ListView)activity.findViewById(R.id.listView);
+        GridView gridView = (GridView)activity.findViewById(R.id.gridView);
 
         BlogPostAdapter adapter = new BlogPostAdapter(activity, BlogPostParser.get().posts);
-        listView.setAdapter(adapter);
+        gridView.setAdapter(adapter);
     }
 }
